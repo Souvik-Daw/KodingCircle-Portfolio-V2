@@ -1,0 +1,21 @@
+ActionAr is the name of the animation(Animations)
+
+"Action"
+"ActionA"
+"ActionB"
+"ActionC"
+are the name of the animation (trial 2)
+
+3d model to code
+https://gltf.pmnd.rs/
+
+Get 3d models
+https://sketchfab.com/
+
+Doc
+https://github.com/pmndrs/drei
+https://r3f.docs.pmnd.rs/getting-started/introduction
+
+
+npm install
+npm run dev
