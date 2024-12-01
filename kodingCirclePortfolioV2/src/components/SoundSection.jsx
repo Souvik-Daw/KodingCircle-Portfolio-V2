@@ -36,7 +36,7 @@ function SoundSection() {
                                 <a className="button"> Portfolio</a>
                             </li>
                         </NavLink>
-                        <NavLink to='https://www.kodingcircle.in/review' target="_blank">
+                        <NavLink to='https://www.kodingcircle.in/Review' target="_blank">
                             <li>
                                 <a className="button">Review</a>
                             </li>

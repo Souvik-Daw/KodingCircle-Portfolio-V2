@@ -2,6 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import { Footer, NavbarSection } from "./components";
 import { About, Contact, Portfolio, Review} from "./pages";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const App = () => {
   return (

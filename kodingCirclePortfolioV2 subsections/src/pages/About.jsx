@@ -5,11 +5,22 @@ import {
 
 import { CTA } from "../components";
 import { experiences, skills } from "../constants";
-
+import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 import Portfolio from "./Portfolio";
+import ProposalPDF from "./Offerings.pdf";
 
+
+const onButtonClick = () => {
+  const pdfUrl = "https://docs.google.com/document/d/1iPtGuENLApOIVJeZ8hpSjlmmFmzOiJ6Dr9L9XptoOl0/export?format=pdf";
+  const link = document.createElement("a");
+  link.href = "https://docs.google.com/document/d/1iPtGuENLApOIVJeZ8hpSjlmmFmzOiJ6Dr9L9XptoOl0/export?format=pdf";
+  link.download = "https://docs.google.com/document/d/1iPtGuENLApOIVJeZ8hpSjlmmFmzOiJ6Dr9L9XptoOl0/export?format=pdf"; // specify the filename
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
 const About = () => {
   return (
@@ -43,6 +54,14 @@ const About = () => {
           At Koding Circle, we understand the challenges you're facing in an increasingly competitive digital landscape. You're not just looking for a website—you want a solution that drives traffic, converts visitors into loyal customers, and helps you stand out.
         </p>
       </div>
+
+      
+      <div class="flex justify-center mt-4 mb-3">
+        <a className='btn' href={ProposalPDF} target="_blank">
+          Our Offers Document 📥
+        </a>
+      </div>
+
 
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>Our Skills</h3>
@@ -141,7 +160,6 @@ const About = () => {
       </div>
 
       <hr className='border-slate-200' />
-
 
       <CTA />
     </section>

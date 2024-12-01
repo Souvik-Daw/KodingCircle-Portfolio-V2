@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { RA } from "../assets";
-import { projects } from "../constants";
+import { projects,portfolio } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -16,13 +16,15 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div onClick={() => window.open(source_code_link, "_blank")}
+     variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
+        
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
@@ -71,10 +73,10 @@ const Portfolio = () => {
     <>
     <div className="p-20 pl-8 pr-8">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `} >My work</p>
+        <p className={`${styles.sectionSubText} `} >Our work</p>
         <motion.h2 initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeIn" }} className={`${styles.sectionHeadText}`}>Projects.</motion.h2>
+          transition={{ duration: 1, ease: "easeIn" }} className={`${styles.sectionHeadText}`}>Portfolio.</motion.h2>
         <p className={`${styles.sectionSubText} `} ><b>We just don’t code ,we create magic!!</b>✨</p>
       </motion.div>
 
@@ -83,19 +85,36 @@ const Portfolio = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
+          Following projects showcases our skills and experience through
+          real-world examples of our work. Each project is briefly described with
+          links to code repositories and live demos in it. It reflects our
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
         </motion.p>
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
+        {portfolio.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+
+      <br></br><br></br>
+
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} `} >Our Other Works</p>
+        <motion.h2 initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }} className={`${styles.sectionHeadText}`}>Projects.</motion.h2>
+        <p className={`${styles.sectionSubText} `} ><b>We dont create websites, we create emotions</b>✨</p>
+      </motion.div>
+
+      <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+
       </div>
     </>
   );

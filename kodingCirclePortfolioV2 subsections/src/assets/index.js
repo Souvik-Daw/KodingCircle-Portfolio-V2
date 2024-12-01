@@ -30,22 +30,25 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import Banner1 from "./ApplicationBannerA1.png";
-import Banner2 from "./ApplicationBannerB8.png";
-import Banner3 from "./ApplicationBannerC2.png";
-import Banner4 from "./ApplicationBannerD1.png";
-import Banner5 from "./ApplicationBannerE1.png";
-import Banner6 from "./ApplicationBannerF1.png";
-import Banner7 from "./ApplicationBannerG1.png";
-import Banner8 from "./ApplicationBannerH1.png";
+import Banner1 from "./ApplicationBannerA1opt.png";
+import Banner2 from "./ApplicationBannerB8opt.png";
+import Banner3 from "./ApplicationBannerC2opt.png";
+import Banner4 from "./ApplicationBannerD1opt.png";
+import Banner5 from "./ApplicationBannerE1opt.png";
+import Banner6 from "./ApplicationBannerF1opt.png";
+import Banner7 from "./ApplicationBannerG1opt.png";
+import Banner8 from "./ApplicationBannerH1opt.png";
 
-import Banner9 from "./ApplicationBanner1.png";
-import Banner10 from "./ApplicationBanner2.png";
-import Banner11 from "./ApplicationBanner3.png";
-import Banner12 from "./ApplicationBanner4.png";
-import Banner13 from "./ApplicationBanner5.png";
-import Banner14 from "./ApplicationBanner6.png";
-import Banner15 from "./ApplicationBanner7.png";
+import Banner9 from "./ApplicationBanner1opt.png";
+import Banner10 from "./ApplicationBanner2opt.png";
+import Banner11 from "./ApplicationBanner3opt.png";
+import Banner12 from "./ApplicationBanner4opt.png";
+import Banner13 from "./ApplicationBanner5opt.png";
+import Banner14 from "./ApplicationBanner6opt.png";
+import Banner15 from "./ApplicationBanner7opt.png";
+
+import Banner16 from "./NovA_UA.png";
+import Banner17 from "./NovB_UA.png";
 
 import RA from "./RA.png";
 
@@ -93,5 +96,7 @@ export {
   Banner12,
   Banner13,
   Banner14,
-  Banner15
+  Banner15,
+  Banner16,
+  Banner17
 };
