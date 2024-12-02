@@ -142,7 +142,7 @@ const Contact = () => {
                 className='input'
                 placeholder='8945215785'
                 required
-                value={form.name}
+                value={form.number}
                 onChange={handleChange}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
