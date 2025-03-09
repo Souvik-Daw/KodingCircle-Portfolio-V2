@@ -250,45 +250,68 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Web/App Development",
-    company_name: "Web/App",
+    title: "Website Development",
+    company_name: "Web",
     icon: starbucks,
     iconBg: "#accbe1",
     date: "March 2020 - April 2021",
     points: [
-      "We design digital solutions that match your business needs, from responsive websites to powerful mobile apps. Our team makes sure everything is easy to use and built to help your business succeed.",
-      "Leverage our full stack development skills to create strong and scalable web applications."
+      "A strong website boosts credibility, visibility, and growth. It keeps you accessible 24/7, engages users, and gives you full control over your brand. In today’s digital world, a website isn’t just an option—it’s a necessity! 💡",
+      "Starts from 5,000 inr"
     ],
   },
   {
-    title: "Advertising/Marketing SEO",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
+    title: "Application Development",
+    company_name: "App",
+    icon: starbucks,
+    iconBg: "#accbe1",
+    date: "March 2020 - April 2021",
     points: [
-      "Enhance your online presence with our expert SEO and digital marketing strategies that attract more visitors and boost sales.",
+      "Apps drive engagement, efficiency, and growth. Whether mobile or web, they enhance user experience, automate tasks, and scale businesses. In a digital-first world, having an app isn’t a luxury—it’s a game-changer! 💡",
+      "Starts from 20,000 inr"
     ],
   },
   {
-    title: "2D/3D Game Development",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Turn your game ideas into reality with our expert 2D and 3D game development services.",
-      "From concept to launch, we offer comprehensive game development services to create engaging and immersive games.",
-    ],
-  },
-  {
-    title: "CGI/VFX & Animation",
+    title: "AI automation and chatbots",
     company_name: "Meta",
     icon: meta,
     iconBg: "#a2d2ff",
     date: "Jan 2023 - Present",
     points: [
-      "Enhance your visual storytelling with our CGI, VFX, and animation services.",
+      "AI-powered automation and chatbots boost efficiency, save time, and enhance customer experience. They provide 24/7 support, streamline workflows, and reduce costs, making businesses smarter and more scalable in the digital era! ",
+      "Starts from 10,000 inr"
+    ],
+  },
+  {
+    title: "Support and maintenance",
+    company_name: "Shopify",
+    icon: shopify,
+    iconBg: "#b7e4c7",
+    date: "Jan 2022 - Jan 2023",
+    points: [
+      "Regular support and maintenance ensure security, performance, and reliability. They help prevent downtime, fix bugs, and keep your system up-to-date, ensuring a seamless user experience and long-term success! 💡",
+      "Starts from 1,000 inr",
+    ],
+  },
+  {
+    title: "Marketing SMO/SEO",
+    company_name: "Tesla",
+    icon: tesla,
+    iconBg: "#fbc3bc",
+    date: "Jan 2021 - Feb 2022",
+    points: [
+      "SEO & SMO boost visibility, drive traffic, and enhance brand engagement. They help businesses rank higher, reach the right audience, and grow organically, making online success faster and more effective! 💡",
+      "Starts from 1,000 inr",
+    ],
+  },
+  {
+    title: "Custom Solutions",
+    company_name: "Tesla",
+    icon: tesla,
+    iconBg: "#b7e4c7",
+    date: "Jan 2021 - Feb 2022",
+    points: [
+      "Off-the-shelf software can’t fit every need. Custom solutions provide tailored features, better efficiency, and seamless scalability, ensuring your business operates exactly the way you need—without limitations! 💡",
     ],
   },
 ];

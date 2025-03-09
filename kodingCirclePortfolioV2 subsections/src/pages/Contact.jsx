@@ -9,6 +9,11 @@ import { Alert, Loader } from "../components";
 import database from './firebase';
 
 const Contact = () => {
+
+  const phoneNumber = "8584855651";
+  const message = encodeURIComponent("Hello, I'm interested in your services!");
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+
   const formRef = useRef();
   const [form, setForm] = useState({ name: "", email: "", message: "", number: "" });
   const { alert, showAlert, hideAlert } = useAlert();
@@ -185,6 +190,7 @@ const Contact = () => {
             >
               {loading ? "Sending..." : "Submit"}
             </button>
+
           </form>
 
 
@@ -221,63 +227,66 @@ const Contact = () => {
         </div>
       </section>
 
+
+
       <div className="flex justify-center gap-8">
-            {/* Email Card */}
-            <div className="flex flex-col items-center justify-center border rounded-lg shadow-md p-4 w-45">
-              <div className="bg-red-100 p-3 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-red-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 12H8m8-4H8m8 8H8"
-                  />
-                </svg>
-              </div>
-              <div className="mt-2 text-center">
-                <p className="text-sm font-semibold">Email</p>
-                <p className="text-sm text-gray-600">kodingcircle@gmail.com</p>
-              </div>
-            </div>
 
-            
-
-            {/* Phone Card */}
-            <div className="flex flex-col items-center justify-center border rounded-lg shadow-md p-4 w-45">
-              <div className="bg-red-100 p-3 rounded-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-red-500"
-                  fill="none"
-                  viewBox="0 0 15 18"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 10l4 4m0 0l4-4m-4 4V4"
-                  />
-                </svg>
-              </div>
-              <div className="mt-2 text-center">
-                <p className="text-sm font-semibold">Phone</p>
-                <p className="text-sm text-gray-600">85848 55651</p>
-              </div>
-            </div>
-
-
-            
-            
-
-
+        <div className="flex flex-col items-center justify-center border rounded-lg shadow-md p-4 w-45">
+          <div className="bg-red-100 p-3 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-red-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M16 12H8m8-4H8m8 8H8"
+              />
+            </svg>
           </div>
+          <div className="mt-2 text-center">
+            <p className="text-sm font-semibold"><a href="mailto:kodingcircle@gmail.com">Email</a></p>
+            <p className="text-sm text-gray-600"><a href="mailto:kodingcircle@gmail.com">kodingcircle@gmail.com</a></p>
+          </div>
+        </div>
+
+
+        <div className="flex flex-col items-center justify-center border rounded-lg shadow-md p-4 w-45" 
+        href={whatsappLink} target="_blank">
+          <div className="bg-red-100 p-3 rounded-full" >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-red-500"
+              fill="none"
+              viewBox="0 0 15 18"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 10l4 4m0 0l4-4m-4 4V4"
+              />
+            </svg>
+          </div>
+          <div className="mt-2 text-center">
+            <p className="text-sm font-semibold"><a href={whatsappLink} target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+            <p className="text-sm text-gray-600"><a href={whatsappLink} target="_blank" rel="noopener noreferrer">85848 55651</a></p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
 
     </>
   );
