@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 import Portfolio from "./Portfolio";
-import ProposalPDF from "./Offerings.pdf";
+import ProposalPDF from "./Offeringsv2.pdf";
 import MSME from "./MSME.pdf";
 
 

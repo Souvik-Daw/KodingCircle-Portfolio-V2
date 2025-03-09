@@ -4,11 +4,7 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 import {
-  tesla,
   threejs,
-  meta,
-  shopify,
-  starbucks,
   git
 } from "../assets";
 import StarIcon from "@mui/icons-material/Star";
@@ -71,11 +67,7 @@ const FeedbackCard = ({
 );
 
 const brands = [
-  { src: tesla, alt: 'The Ask Avi Arya Show' },
   { src: threejs, alt: 'Tarot Sakhi' },
-  { src: meta, alt: 'Internet Moguls' },
-  { src: shopify, alt: 'Think School' },
-  { src: starbucks, alt: 'Fit Hitesh' },
   { src: git, alt: 'Labelle' }
 ];
 

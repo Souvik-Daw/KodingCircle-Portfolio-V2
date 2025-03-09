@@ -1,4 +1,3 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
   car,
   contact,
@@ -252,19 +251,20 @@ export const experiences = [
   {
     title: "Website Development",
     company_name: "Web",
-    icon: starbucks,
-    iconBg: "#accbe1",
+    icon: html,
+    iconBg: "#f49d7a",
     date: "March 2020 - April 2021",
     points: [
       "A strong website boosts credibility, visibility, and growth. It keeps you accessible 24/7, engages users, and gives you full control over your brand. In today’s digital world, a website isn’t just an option—it’s a necessity! 💡",
-      "Starts from 5,000 inr"
+      "Static website starts from 5,000 inr",
+      "Dynamic website starts from 15,000 inr"
     ],
   },
   {
     title: "Application Development",
     company_name: "App",
-    icon: starbucks,
-    iconBg: "#accbe1",
+    icon: reactjs,
+    iconBg: "#cde6f2",
     date: "March 2020 - April 2021",
     points: [
       "Apps drive engagement, efficiency, and growth. Whether mobile or web, they enhance user experience, automate tasks, and scale businesses. In a digital-first world, having an app isn’t a luxury—it’s a game-changer! 💡",
@@ -274,7 +274,7 @@ export const experiences = [
   {
     title: "AI automation and chatbots",
     company_name: "Meta",
-    icon: meta,
+    icon: docker,
     iconBg: "#a2d2ff",
     date: "Jan 2023 - Present",
     points: [
@@ -285,8 +285,8 @@ export const experiences = [
   {
     title: "Support and maintenance",
     company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#b7e4c7",
+    icon: redux,
+    iconBg: "#ae92db",
     date: "Jan 2022 - Jan 2023",
     points: [
       "Regular support and maintenance ensure security, performance, and reliability. They help prevent downtime, fix bugs, and keep your system up-to-date, ensuring a seamless user experience and long-term success! 💡",
@@ -296,7 +296,7 @@ export const experiences = [
   {
     title: "Marketing SMO/SEO",
     company_name: "Tesla",
-    icon: tesla,
+    icon: figma,
     iconBg: "#fbc3bc",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -307,8 +307,8 @@ export const experiences = [
   {
     title: "Custom Solutions",
     company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#b7e4c7",
+    icon: tailwind,
+    iconBg: "#9ddeea",
     date: "Jan 2021 - Feb 2022",
     points: [
       "Off-the-shelf software can’t fit every need. Custom solutions provide tailored features, better efficiency, and seamless scalability, ensuring your business operates exactly the way you need—without limitations! 💡",
