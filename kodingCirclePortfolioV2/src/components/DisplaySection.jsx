@@ -16,8 +16,9 @@ function DisplaySection() {
                 To transform your business into an something more
             </span>
             <NavLink to='https://www.kodingcircle.in/contact' target="_blank">
+            <br></br>
             <button
-                className="button">Contact us</button>
+                className="button">Click Me</button>
             </NavLink>
             <button className="back-button" onClick={handleScrollToTop}>TOP</button>
         </div>
